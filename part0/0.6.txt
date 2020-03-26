@@ -1,0 +1,9 @@
+title 0.6
+
+note over browser:
+The data is to be sent with an HTTP POST request
+The Content-Type header of the request tells the server,
+that the included data is represented in JSON format.
+end note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: HTTP status code 201
